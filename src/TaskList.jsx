@@ -48,13 +48,13 @@ function TaskList({ todos, handleTaskClick, handleClearCompleted, handleClearTas
             <div className="tasksinfo">
                 <p>{todos.length} items left</p>
                 <div className="center-tasksinfo">
-                    <p  onClick={() => {setFilterType("All")}}
+                    <p  onClick={() => {setFilterType("All"); console.log("pressed")}}
                         className={filterType === "All" ? 'active' : ''}>
                         All</p>
-                    <p  onClick={() => {setFilterType("Active")}}
+                    <p  onClick={() => {setFilterType("Active"); console.log("pressed")}}
                         className={filterType === "Active" ? 'active' : ''}>
                         Active</p>
-                    <p  onClick={() => {setFilterType("Completed")}}
+                    <p  onClick={() => {setFilterType("Completed"); console.log("pressed")}}
                         className={filterType === "Completed" ? 'active' : ''}>
                         Completed</p>
                 </div>
